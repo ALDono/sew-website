@@ -1,0 +1,300 @@
+/*********************/
+/* Custom Properties */
+/*********************/
+:root{
+
+  /* Custom Colours */
+  --clr-main-10: #EBB42C;
+  --clr-main-20: #012B28;
+
+  --clr-accent-10: #F1CB6C;
+  --clr-accent-20: #EFBCD5;
+  --clr-accent-30: #3185FC;
+  --clr-accent-40: #E84855;
+  
+  
+  
+  /* Custom Fonts */
+  --ff-main: "Epilogue", sans-serif;
+
+  /* Custom Font Weights */
+  --fw-reg: 300;
+  --fw-reg-fat: 400;
+  --fw-bold: 700;
+
+  /* Custom Font Sizes */
+
+  --fs-mob-p: 0.875rem; /* 14px */
+  --fs-mob-h-l: 1.375; /* 22px */
+  --fs-mob-h-m: 1.125rem; /* 18px */
+
+  --fs-p: ;
+  --fs-h-l: ;
+  --fs-h-m: ;
+
+
+
+}
+
+
+
+
+/* End of Custom Properties */
+
+
+/* CSS Reset - Used Andy Bells */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* End of CSS Reset */
+
+
+/*******************/
+/* Utility Classes */
+/*******************/
+
+
+/* Background Colours */
+.bg-clr-hf{
+  background-color: var(--clr-main-20);
+}
+
+.bg-clr-accent-10{
+  background-color: var(--clr-accent-10);
+}
+
+.bg-clr-accent-20{
+  background-color: var(--clr-accent-20);
+}
+
+.bg-clr-accent-30{
+  background-color: var(--clr-accent-30);
+}
+
+.bg-clr-accent-40{
+  background-color: var(--clr-accent-40);
+}
+
+/* Font Colours */
+.f-clr-main-10{
+  color: var(--clr-main-10);
+}
+
+.f-clr-main-20{
+  color: var(--clr-main-20);
+}
+
+.f-clr-accent-10{
+  color: var(--clr-accent-10);
+}
+
+.f-clr-accent-20{
+  color: var(--clr-accent-20);
+}
+
+.f-clr-accent-30{
+  color: var(--clr-accent-30);
+}
+
+.f-clr-accent-40{
+  color: var(--clr-accent-40);
+}
+
+
+/* Font Weight */
+.fw-bold{
+  font-weight: var(--fw-bold);
+}
+
+.fw-reg{
+  font-weight: var(--fw-reg);
+}
+
+/* Font Family */
+body{
+  font-family: var(--ff-main);
+  font-weight: var(--fw-reg);
+  text-transform: uppercase;
+}
+
+/* Button */
+.btn{
+  height: 40px;
+  width: 160px;
+  padding: 20px;
+  box-shadow: 4px 4px 4px #000000;
+  border: var(--clr-accent-40) 3px solid;
+  border-radius: 8px;
+  background-color: var(--clr-accent-10);
+  color: var(--clr-accent-40);
+  font-size: 14px;
+  line-height: 5px;
+}
+
+.btn:hover{
+  background-color: var(--clr-accent-40);
+  box-shadow: 2px 2px 2px #000000;
+  color: var(--clr-accent-10)
+}
+
+/* end of Utility Classes */
+
+section,main{
+  border-radius: 8px;
+  width: 95vw;
+  margin: 10px auto 0 auto;
+  overflow: hidden;
+}
+/*******************/
+/* General Styling */
+/*******************/
+
+/* Nav and Links */
+header{
+  background-color: var(--clr-main-20);
+  min-height: 160px;
+  padding: 20px;
+}
+
+.nav-flex{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+#nav-links{
+  display: none;
+}
+
+.ham-btn{
+  background: none;
+  border: none;
+}
+
+#ham-btn-cls{
+  display: none;
+}
+
+a{
+  font-weight: var(--fw-reg);
+  text-decoration: none;
+  font-size: 18px;
+  color: var(--clr-main-10);
+}
+
+a:hover{
+  font-weight: var(--fw-bold);
+  color: var(--clr-accent-40);
+}
+
+ul{
+  list-style: none;
+  padding: 0px;
+}
+
+li{
+  margin-top: 30px;
+  text-align: center;
+  
+}
+
+/* Hero Section */
+.hero-image{
+  background-image: url(images/mel-poole-7UIrTwF2WWo-unsplash.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  min-height: 320px;
+  text-align: center;
+  padding: 60px 10px;
+  line-height: 50px;
+}
+
+
+
+/* Main */
+main{
+  padding: 40px;
+  color: var(--clr-accent-40)
+}
+
+/* footer */
+
+footer{
+  background-color: var(--clr-main-20);
+  color: var(--clr-main-10)
+}

@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+
+    <!-- Font Family Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Something Everyone Wants</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="nav-flex">
+          <img src="images/Original on Transparent Simplified.png" width="150px" alt="">
+          <button id="ham-btn-opn" class="ham-btn"><img src="images/Hamburger_icon.png" width="32px" alt=""></button>
+          <button id="ham-btn-cls" class="ham-btn"><img src="images/cross.png" width="32px" alt=""></button>
+          <nav id="nav-links">
+            <ul>
+              <li><a href="#">Blankets</a></li>
+              <li><a href="#">Crafts</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">About Us</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+        <section>
+          <!-- Product Image Carousel-->
+          <!-- placeholder -->
+          <img src="images/blanket.jpg" alt="">
+        </section>
+        <section class="hero-image">
+          <!-- Hero Image-->
+          <h2 class="fw-reg-fat"><span class="f-clr-accent-40">Crafts </span><span class="f-clr-accent-30">Clothing</span></h2>
+          <h1 class="fw-reg f-clr-main-10">Something <span class="fw-bold">Everyone</span> Wants</h1>
+          <h2 class="fw-reg-fat"><span class="f-clr-main-20">Sewing </span><span>Embroidery </span><span class="f-clr-accent-20">Blankets</span></h2>
+        </section>
+        <main class="bg-clr-accent-10">
+          <picture>
+            <!-- Info Image-->
+          </picture>
+          <div>
+            <!-- <img src="images/present_green.png" width="50px" alt=""> -->
+            <h1 class="fw-reg">Something <span class="fw-bold">Everyone</span>  Wants</h1>
+            <p>
+              Bold, Bright and Beautiful
+              Our passion is creating hand-made blankets, crafts and embroidered products from our home in Dorset.
+              We use recycled materials to create our lovingly hand-sewn blankets.
+              You can browse our list of products on this website, or if you have a particular need you can get in contact with us below.
+            </p>
+            <a href="#">
+              <button class="btn">
+                Our <span class="fw-bold">Products</span>
+              </button>
+            </a>
+            <a href="#">
+              <button class="btn">
+                <span class="fw-bold">Contact  Us</span>
+              </button>
+            </a>
+          </div>
+        </main>
+        <section>
+          <!-- Accent Image -->
+          <h1>Testimonials</h1>
+          <p>Absolutely love my blanket! The craftsmanship is impeccable, and snuggling up with it feels like a warm hug. Couldn't be happier with my purchase!
+          Leigh - Bournemouth
+          </p>
+          <p>
+          I bought one of your blankets made from recycled fabrics. Not only is it eco-friendly, but it's also incredibly soft and cozy. Really well made as well, love it!
+          Michelle - Derby
+          </p>
+        </section>
+        <footer>
+          <!-- Socials -->
+          <div class="socials">
+            <a href="#"><img src="images/instagram_social.svg" width="32px" alt=""></a>
+            <a href="#"><img src="images/facebook_social.svg"  width="32px" alt=""></a>
+            <a href="#"><img src="images/twitter_social.png"   width="32px" alt=""></a>
+          </div>
+          <p>&#169; 2024 Something Everyone Wants</p>
+          <p>Website By Aubrey Dono</p>
+        </footer>
+    </div>
+    <script>
+      ////////////////////////////////////
+      // Hamburger Button Open and Close//
+      ////////////////////////////////////
+      var navigation = document.getElementById("nav-links");
+      var nav_btn_opn = document.getElementById("ham-btn-opn");
+      var nav_btn_cls = document.getElementById("ham-btn-cls");
+
+
+      document.getElementById("ham-btn-opn").addEventListener("click", function(){
+          nav_btn_opn.style.display = "none";
+          nav_btn_cls.style.display = "block"
+          navigation.style.display = "block";
+      })
+
+      document.getElementById("ham-btn-cls").addEventListener("click", function(){
+        nav_btn_opn.style.display = "block";
+        nav_btn_cls.style.display = "none"
+        navigation.style.display = "none";
+      })
+    </script>
+  </body>
+</html>
