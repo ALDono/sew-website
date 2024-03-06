@@ -23,17 +23,17 @@
   --fw-bold: 700;
 
   /* Custom Font Sizes */
-
   --fs-mob-p: 0.875rem; /* 14px */
-  --fs-mob-h-l: 1.375; /* 22px */
-  --fs-mob-h-m: 1.125rem; /* 18px */
+  --fs-mob-h-l: 1.5rem; /* */
+  --fs-mob-h-m: 1.3rem; /*  */
 
-  --fs-p: ;
-  --fs-h-l: ;
-  --fs-h-m: ;
+  --fs-p: 1.125rem; /* 18px */
+  --fs-h-l: 2rem; /* 32px */
+  --fs-h-m: 2.5rem; /* 40px */
 
+  /* Custom Padding */
 
-
+  --p-mob: 40px;
 }
 
 
@@ -174,6 +174,31 @@ select {
   color: var(--clr-accent-40);
 }
 
+/* Font Sizes */
+.fs-mob-p{
+  font-size: var(--fs-mob-p);
+}
+
+.fs-mob-h-l{
+  font-size: var(--fs-mob-h-l);
+}
+
+.fs-mob-h-m{
+  font-size: var(--fs-mob-h-m);
+}
+
+.fs-p{
+  font-size: var(--fs-p);
+}
+
+.fs-h-l{
+  font-size: var(--fs-h-l);
+}
+
+.fs-h-m{
+  font-size: var(--fs-h-m);
+}
+
 
 /* Font Weight */
 .fw-bold{
@@ -201,7 +226,7 @@ body{
   border-radius: 8px;
   background-color: var(--clr-accent-10);
   color: var(--clr-accent-40);
-  font-size: 14px;
+  font-size: var(--fs-mob-p);
   line-height: 5px;
 }
 
@@ -253,7 +278,7 @@ header{
 a{
   font-weight: var(--fw-reg);
   text-decoration: none;
-  font-size: 18px;
+  font-size: var(--fs-mob-h-m);
   color: var(--clr-main-10);
 }
 
@@ -288,13 +313,54 @@ li{
 
 /* Main */
 main{
-  padding: 40px;
+  padding: var(--p-mob);
   color: var(--clr-accent-40)
+}
+
+.main_flex{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.main-buttons{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: space-around;
+}
+
+.testimonials{
+  background-color: var(--clr-accent-10);
+  padding: var(--p-mob);
+}
+
+.test-text{
+  margin-top: 20px;
 }
 
 /* footer */
 
 footer{
   background-color: var(--clr-main-20);
-  color: var(--clr-main-10)
+  color: var(--clr-main-10);
+  padding: var(--p-mob);
+  top: 1940px;
+  position:absolute;
+  z-index: -1;
+  width: 100vw;
+
+}
+
+.socials{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 30px;
+}
+
+.footer-text{
+  margin-top: 40px;
+  text-align: center;
 }
