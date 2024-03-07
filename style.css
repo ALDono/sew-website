@@ -34,6 +34,10 @@
   /* Custom Padding */
 
   --p-mob: 40px;
+  
+
+  /* Custom Margin */
+  --margin-sections: 10px auto 0 auto;
 }
 
 
@@ -236,14 +240,26 @@ body{
   color: var(--clr-accent-10)
 }
 
-/* end of Utility Classes */
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 
 section,main{
   border-radius: 8px;
   width: 95vw;
-  margin: 10px auto 0 auto;
+  margin: var(--margin-sections);
   overflow: hidden;
 }
+/* end of Utility Classes */
+
+
 /*******************/
 /* General Styling */
 /*******************/
@@ -298,6 +314,18 @@ li{
   
 }
 
+/* Slidewhow */
+
+.product-slideshow{
+  max-height: 500px;
+}
+
+.product-slideshow img{
+  width: 100%;
+  /* position: relative; */
+  /* transform: translateY(-25%); */
+}
+
 /* Hero Section */
 .hero-image{
   background-image: url(images/mel-poole-7UIrTwF2WWo-unsplash.jpg);
@@ -305,23 +333,40 @@ li{
   background-repeat: no-repeat;
   min-height: 320px;
   text-align: center;
-  padding: 60px 10px;
   line-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Fix the text overflow at small screen sizes */
+@media (max-width: 375px){
+  .hero-image h2{
+    font-size: var(--fs-mob-p);
+  }
+
+  .hero-image{
+    min-height: 270px;
+  }
 }
 
 
 
 /* Main */
 main{
-  padding: var(--p-mob);
-  color: var(--clr-accent-40)
+  color: var(--clr-accent-40);
+  display: flex;
+  flex-direction: column;
 }
 
-.main_flex{
+.main-flex{
+  padding: var(--p-mob);
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 30px;
+  margin: var(--margin-sections);
+  border-radius: 8px;
 }
 
 .main-buttons{
@@ -331,12 +376,34 @@ main{
   justify-content: space-around;
 }
 
+picture{
+  height: 400px;
+  width: 100%;
+  background-image: url(images/background1.jpg);
+  background-size:150%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* Testimonials */
+
 .testimonials{
-  background-color: var(--clr-accent-10);
-  padding: var(--p-mob);
+  width: 100%;
+  padding-top: 30px;
+  overflow: visible;
+  position: relative;
+  height: 400px;
+  background-image: url(images/jazmin-quaynor-bYOi200uQ6w-unsplash.jpg)
 }
 
 .test-text{
+  background-color: var(--clr-accent-20);
+  padding: var(--p-mob);
+  border-radius: 8px;
+  width: 95%;
+  margin: 10px auto;
+}
+
+.test-review{
   margin-top: 20px;
 }
 
@@ -346,11 +413,7 @@ footer{
   background-color: var(--clr-main-20);
   color: var(--clr-main-10);
   padding: var(--p-mob);
-  top: 1940px;
-  position:absolute;
-  z-index: -1;
-  width: 100vw;
-
+  padding-top: 200px;
 }
 
 .socials{
@@ -364,3 +427,46 @@ footer{
   margin-top: 40px;
   text-align: center;
 }
+
+
+/***************/
+/* Tablet Size */
+/***************/
+
+@media(min-width: 770px){
+
+  /* Main */
+  main{
+    flex-direction: row;
+    gap: 30px;
+  }
+  
+  /* .main-flex{
+    padding: var(--p-mob);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin: var(--margin-sections);
+  }
+
+  */
+  
+  .main-buttons{
+    flex-direction: row;
+  }
+
+  
+  picture{
+    height: 600px;
+    width: 150%;
+    background-size:350%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+
+}
+
