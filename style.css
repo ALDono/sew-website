@@ -3,470 +3,255 @@
 /*********************/
 :root{
 
-  /* Custom Colours */
-  --clr-main-10: #EBB42C;
-  --clr-main-20: #012B28;
-
-  --clr-accent-10: #F1CB6C;
-  --clr-accent-20: #EFBCD5;
-  --clr-accent-30: #3185FC;
-  --clr-accent-40: #E84855;
+    /* Custom Colours */
+    --clr-main-10: #EBB42C;
+    --clr-main-20: #012B28;
   
+    --clr-accent-10: #F1CB6C;
+    --clr-accent-20: #EFBCD5;
+    --clr-accent-30: #3185FC;
+    --clr-accent-40: #E84855;
+    
+    
+    
+    /* Custom Fonts */
+    --ff-main: "Epilogue", sans-serif;
   
+    /* Custom Font Weights */
+    --fw-reg: 300;
+    --fw-reg-fat: 400;
+    --fw-bold: 700;
   
-  /* Custom Fonts */
-  --ff-main: "Epilogue", sans-serif;
-
-  /* Custom Font Weights */
-  --fw-reg: 300;
-  --fw-reg-fat: 400;
-  --fw-bold: 700;
-
-  /* Custom Font Sizes */
-  --fs-mob-p: 0.875rem; /* 14px */
-  --fs-mob-h-l: 1.5rem; /* */
-  --fs-mob-h-m: 1.3rem; /*  */
-
-  --fs-p: 1.125rem; /* 18px */
-  --fs-h-l: 2rem; /* 32px */
-  --fs-h-m: 2.5rem; /* 40px */
-
-  /* Custom Padding */
-
-  --p-mob: 40px;
+    /* Custom Font Sizes */
+    --fs-mob-p: 0.875rem; /* 14px */
+    --fs-mob-h-l: 1.5rem; /* */
+    --fs-mob-h-m: 1.3rem; /*  */
   
-
-  /* Custom Margin */
-  --margin-sections: 10px auto 0 auto;
-}
-
-
-
-
-/* End of Custom Properties */
-
-
-/* CSS Reset - Used Andy Bells */
-/* Box sizing rules */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-/* Remove default margin */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-figure,
-blockquote,
-dl,
-dd {
-  margin-block-end: 0;
-  margin: 0;
-}
-
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
-  list-style: none;
-}
-
-/* Set core root defaults */
-html:focus-within {
-  scroll-behavior: smooth;
-}
-
-/* Set core body defaults */
-body {
-  min-height: 100vh;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
-  margin: 0;
-}
-
-/* A elements that don't have a class get default styles */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
-}
-
-/* Make images easier to work with */
-img,
-picture {
-  max-width: 100%;
-  display: block;
-}
-
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
-@media (prefers-reduced-motion: reduce) {
-  html:focus-within {
-   scroll-behavior: auto;
+    --fs-p: 1.125rem; /* 18px */
+    --fs-h-l: 2rem; /* 32px */
+    --fs-h-m: 2.5rem; /* 40px */
+  
+    /* Custom Padding */
+  
+    --p-mob: 40px;
+    
+  
+    /* Custom Margin */
+    --margin-sections: 10px auto 0 auto;
   }
   
+  
+  
+  
+  /* End of Custom Properties */
+  
+  
+  /* CSS Reset - Used Andy Bells */
+  /* Box sizing rules */
   *,
   *::before,
   *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
+    box-sizing: border-box;
   }
-}
-
-/* End of CSS Reset */
-
-
-/*******************/
-/* Utility Classes */
-/*******************/
-
-
-/* Background Colours */
-.bg-clr-hf{
-  background-color: var(--clr-main-20);
-}
-
-.bg-clr-accent-10{
-  background-color: var(--clr-accent-10);
-}
-
-.bg-clr-accent-20{
-  background-color: var(--clr-accent-20);
-}
-
-.bg-clr-accent-30{
-  background-color: var(--clr-accent-30);
-}
-
-.bg-clr-accent-40{
-  background-color: var(--clr-accent-40);
-}
-
-/* Font Colours */
-.f-clr-main-10{
-  color: var(--clr-main-10);
-}
-
-.f-clr-main-20{
-  color: var(--clr-main-20);
-}
-
-.f-clr-accent-10{
-  color: var(--clr-accent-10);
-}
-
-.f-clr-accent-20{
-  color: var(--clr-accent-20);
-}
-
-.f-clr-accent-30{
-  color: var(--clr-accent-30);
-}
-
-.f-clr-accent-40{
-  color: var(--clr-accent-40);
-}
-
-/* Font Sizes */
-.fs-mob-p{
-  font-size: var(--fs-mob-p);
-}
-
-.fs-mob-h-l{
-  font-size: var(--fs-mob-h-l);
-}
-
-.fs-mob-h-m{
-  font-size: var(--fs-mob-h-m);
-}
-
-.fs-p{
-  font-size: var(--fs-p);
-}
-
-.fs-h-l{
-  font-size: var(--fs-h-l);
-}
-
-.fs-h-m{
-  font-size: var(--fs-h-m);
-}
-
-
-/* Font Weight */
-.fw-bold{
-  font-weight: var(--fw-bold);
-}
-
-.fw-reg{
-  font-weight: var(--fw-reg);
-}
-
-/* Font Family */
-body{
-  font-family: var(--ff-main);
-  font-weight: var(--fw-reg);
-  text-transform: uppercase;
-}
-
-/* Button */
-.btn{
-  height: 40px;
-  width: 160px;
-  padding: 20px;
-  box-shadow: 4px 4px 4px #000000;
-  border: var(--clr-accent-40) 3px solid;
-  border-radius: 8px;
-  background-color: var(--clr-accent-10);
-  color: var(--clr-accent-40);
-  font-size: var(--fs-mob-p);
-  line-height: 5px;
-}
-
-.btn:hover{
-  background-color: var(--clr-accent-40);
-  box-shadow: 2px 2px 2px #000000;
-  color: var(--clr-accent-10)
-}
-
-.visually-hidden {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
-
-section,main{
-  border-radius: 8px;
-  width: 95vw;
-  margin: var(--margin-sections);
-  overflow: hidden;
-}
-/* end of Utility Classes */
-
-
-/*******************/
-/* General Styling */
-/*******************/
-
-/* Nav and Links */
-header{
-  background-color: var(--clr-main-20);
-  min-height: 160px;
-  padding: 20px;
-}
-
-.nav-flex{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-}
-
-#nav-links{
-  display: none;
-}
-
-.ham-btn{
-  background: none;
-  border: none;
-}
-
-#ham-btn-cls{
-  display: none;
-}
-
-a{
-  font-weight: var(--fw-reg);
-  text-decoration: none;
-  font-size: var(--fs-mob-h-m);
-  color: var(--clr-main-10);
-}
-
-a:hover{
-  font-weight: var(--fw-bold);
-  color: var(--clr-accent-40);
-}
-
-ul{
-  list-style: none;
-  padding: 0px;
-}
-
-li{
-  margin-top: 30px;
-  text-align: center;
   
-}
-
-/* Slidewhow */
-
-.product-slideshow{
-  max-height: 500px;
-}
-
-.product-slideshow img{
-  width: 100%;
-  /* position: relative; */
-  /* transform: translateY(-25%); */
-}
-
-/* Hero Section */
-.hero-image{
-  background-image: url(images/mel-poole-7UIrTwF2WWo-unsplash.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  min-height: 320px;
-  text-align: center;
-  line-height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Fix the text overflow at small screen sizes */
-@media (max-width: 375px){
-  .hero-image h2{
+  /* Remove default margin */
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  figure,
+  blockquote,
+  dl,
+  dd {
+    margin-block-end: 0;
+    margin: 0;
+  }
+  
+  /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+  ul[role='list'],
+  ol[role='list'] {
+    list-style: none;
+  }
+  
+  /* Set core root defaults */
+  html:focus-within {
+    scroll-behavior: smooth;
+  }
+  
+  /* Set core body defaults */
+  body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    margin: 0;
+  }
+  
+  /* A elements that don't have a class get default styles */
+  a:not([class]) {
+    text-decoration-skip-ink: auto;
+  }
+  
+  /* Make images easier to work with */
+  img,
+  picture {
+    max-width: 100%;
+    display: block;
+  }
+  
+  /* Inherit fonts for inputs and buttons */
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+  
+  /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+  @media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+     scroll-behavior: auto;
+    }
+    
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+  
+  /* End of CSS Reset */
+  
+  
+  /*******************/
+  /* Utility Classes */
+  /*******************/
+  
+  
+  /* Background Colours */
+  .bg-clr-hf{
+    background-color: var(--clr-main-20);
+  }
+  
+  .bg-clr-accent-10{
+    background-color: var(--clr-accent-10);
+  }
+  
+  .bg-clr-accent-20{
+    background-color: var(--clr-accent-20);
+  }
+  
+  .bg-clr-accent-30{
+    background-color: var(--clr-accent-30);
+  }
+  
+  .bg-clr-accent-40{
+    background-color: var(--clr-accent-40);
+  }
+  
+  /* Font Colours */
+  .f-clr-main-10{
+    color: var(--clr-main-10);
+  }
+  
+  .f-clr-main-20{
+    color: var(--clr-main-20);
+  }
+  
+  .f-clr-accent-10{
+    color: var(--clr-accent-10);
+  }
+  
+  .f-clr-accent-20{
+    color: var(--clr-accent-20);
+  }
+  
+  .f-clr-accent-30{
+    color: var(--clr-accent-30);
+  }
+  
+  .f-clr-accent-40{
+    color: var(--clr-accent-40);
+  }
+  
+  /* Font Sizes */
+  .fs-mob-p{
     font-size: var(--fs-mob-p);
   }
-
-  .hero-image{
-    min-height: 270px;
-  }
-}
-
-
-
-/* Main */
-main{
-  color: var(--clr-accent-40);
-  display: flex;
-  flex-direction: column;
-}
-
-.main-flex{
-  padding: var(--p-mob);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-  margin: var(--margin-sections);
-  border-radius: 8px;
-}
-
-.main-buttons{
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  justify-content: space-around;
-}
-
-picture{
-  height: 400px;
-  width: 100%;
-  background-image: url(images/background1.jpg);
-  background-size:150%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-/* Testimonials */
-
-.testimonials{
-  width: 100%;
-  padding-top: 30px;
-  overflow: visible;
-  position: relative;
-  height: 400px;
-  background-image: url(images/jazmin-quaynor-bYOi200uQ6w-unsplash.jpg)
-}
-
-.test-text{
-  background-color: var(--clr-accent-20);
-  padding: var(--p-mob);
-  border-radius: 8px;
-  width: 95%;
-  margin: 10px auto;
-}
-
-.test-review{
-  margin-top: 20px;
-}
-
-/* footer */
-
-footer{
-  background-color: var(--clr-main-20);
-  color: var(--clr-main-10);
-  padding: var(--p-mob);
-  padding-top: 200px;
-}
-
-.socials{
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  gap: 30px;
-}
-
-.footer-text{
-  margin-top: 40px;
-  text-align: center;
-}
-
-
-/***************/
-/* Tablet Size */
-/***************/
-
-@media(min-width: 770px){
-
-  /* Main */
-  main{
-    flex-direction: row;
-    gap: 30px;
+  
+  .fs-mob-h-l{
+    font-size: var(--fs-mob-h-l);
   }
   
-  /* .main-flex{
-    padding: var(--p-mob);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    margin: var(--margin-sections);
+  .fs-mob-h-m{
+    font-size: var(--fs-mob-h-m);
   }
-
-  */
   
-  .main-buttons{
-    flex-direction: row;
+  .fs-p{
+    font-size: var(--fs-p);
   }
-
   
-  picture{
-    height: 600px;
-    width: 150%;
-    background-size:350%;
-    background-repeat: no-repeat;
-    background-position: center;
+  .fs-h-l{
+    font-size: var(--fs-h-l);
+  }
+  
+  .fs-h-m{
+    font-size: var(--fs-h-m);
+  }
+  
+  
+  /* Font Weight */
+  .fw-bold{
+    font-weight: var(--fw-bold);
+  }
+  
+  .fw-reg{
+    font-weight: var(--fw-reg);
+  }
+  
+  /* Font Family */
+  body{
+    font-family: var(--ff-main);
+    font-weight: var(--fw-reg);
+    text-transform: uppercase;
+  }
+  
+  /* Button */
+  .btn{
+    height: 40px;
+    width: 160px;
+    padding: 20px;
+    box-shadow: 4px 4px 4px #000000;
+    border: var(--clr-accent-40) 3px solid;
     border-radius: 8px;
-    overflow: hidden;
+    background-color: var(--clr-accent-10);
+    color: var(--clr-accent-40);
+    font-size: var(--fs-mob-p);
+    line-height: 5px;
   }
-
-
-}
-
+  
+  .btn:hover{
+    background-color: var(--clr-accent-40);
+    box-shadow: 2px 2px 2px #000000;
+    color: var(--clr-accent-10)
+  }
+  
+  .visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+  
+  
+  
+  /*******************/
+  /* General Styling */
+  /*******************/
