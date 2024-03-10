@@ -44,6 +44,7 @@
     --std-box-spacing: calc((var(--std-spacing))/3);
   }
   
+
   
   
   
@@ -227,7 +228,7 @@
   /* Button */
   .btn{
     height: 40px;
-    width: 160px;
+    width: 175px;
     padding: 20px;
     box-shadow: 4px 4px 4px #000000;
     border: var(--clr-accent-40) 3px solid;
@@ -243,6 +244,10 @@
     box-shadow: 2px 2px 2px #000000;
     color: var(--clr-accent-10)
   }
+
+
+
+
   
   .visually-hidden {
     clip: rect(0 0 0 0);
@@ -509,6 +514,11 @@
 
   .cta-button{
     margin-top: 64px;
+  }
+
+  .btn{
+    height: 60px;
+    width: 240px;
   }
 
 }
