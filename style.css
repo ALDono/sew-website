@@ -223,6 +223,11 @@
     font-family: var(--ff-main);
     font-weight: var(--fw-reg);
     text-transform: uppercase;
+    /* background-image: url(images/jazmin-quaynor-bYOi200uQ6w-unsplash.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
   }
   
   /* Button */
@@ -244,10 +249,6 @@
     box-shadow: 2px 2px 2px #000000;
     color: var(--clr-accent-10)
   }
-
-
-
-
   
   .visually-hidden {
     clip: rect(0 0 0 0);
@@ -264,6 +265,7 @@
     color: var(--clr-main-10);
     text-transform: capitalize;
     font-size: var(--fs-mob-p);
+    cursor: pointer;
   }
 
   a:hover{
@@ -285,6 +287,111 @@
   .bold{
     font-weight: 700;
   }
+
+  .gap{
+    height: 1500px;
+  }
+
+  /******************/
+  /* Scroll Watcher */
+  /******************/
+
+  /* .scroll-watcher{
+    height: 10px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background-color: lime;
+    width: 100%;
+    scale: 0 1;
+    transform-origin: left;
+    animation: scroll-watcher linear;
+    animation-timeline: scroll();
+  }
+
+  @keyframes scroll-watcher{
+    to { 
+      scale: 1 1;
+    }
+  } */
+
+  /* Background Animation */
+  .bg-img-2{
+    background-image: url(images/backgroundT.jpg);
+    position: fixed;
+    z-index: -1;
+    opacity: 0;
+    height: 100vh;
+    width: 100vw;
+    /* this is the how you want the animation to play out */
+    animation: fade2 linear forwards;
+    /* this dictates the timeline in which the animation takes place*/
+    animation-timeline: scroll();
+  }
+
+  .bg-img-1{
+    background-image: url(images/backgroundT.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    z-index: -1;
+    opacity: 0;
+    height: 100vh;
+    width: 100vw;
+    /* this is the how you want the animation to play out */
+    animation: fade1 linear forwards;
+    /* this dictates the timeline in which the animation takes place*/
+    animation-timeline: scroll();
+  }
+
+  .bg-img-3{
+    background-image: url(images/backgroundB.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    z-index: -1;
+    opacity: 0;
+    height: 100vh;
+    width: 100vw;
+    /* this is the how you want the animation to play out */
+    animation: fade3 linear forwards;
+    /* this dictates the timeline in which the animation takes place*/
+    animation-timeline: scroll();
+  }
+
+  /* This dictates what start and end of the keyframe looks like */
+  @keyframes fade1{
+    0%{
+      opacity: 0.8;
+    }
+    33%{
+      opacity: 0;
+    }
+  }
+
+  @keyframes fade2{
+    33%{
+      opacity: 0.8;
+    }
+    80%{
+      opacity: 0;
+    }
+  }
+
+  @keyframes fade3{
+    33%{
+      opacity: 0;
+    }
+    80%{
+      opacity: 0.8;
+    }
+    100%{
+      opacity: 0.8;
+    }
+  }
+
+
+  /* End of Animation */
 
   
   /*******************/
@@ -445,7 +552,7 @@
 .main-cta{
   background-color: var(--clr-accent-10);
   margin-top: var(--std-box-spacing);
-  padding: 32px 0px;
+  padding: 32px 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -501,6 +608,7 @@
 
   .main-section{
     grid-template-columns: 1fr 1fr;
+    direction: rtl;
   }
 
   .main-cta{
@@ -519,6 +627,66 @@
   .btn{
     height: 60px;
     width: 240px;
+  }
+
+}
+
+/***********************/
+/* Testimonial Section */
+/***********************/
+
+.testimonial-section{
+  background-image: url(images/jazmin-quaynor-bYOi200uQ6w-unsplash.jpg);
+  margin: var(--std-box-spacing) var(--std-box-spacing) 0px var(--std-box-spacing);
+  display: flex;
+  padding: var(--std-spacing);
+}
+
+.testimonial-text{
+  background-color: var(--clr-accent-20);
+  color: var(--clr-accent-30);
+  padding: var(--std-spacing);
+}
+
+/* Testimonial Desktop Size */
+
+@media (min-width: 1100px){
+  .testimonial-text{
+    width: 70%;
+  }
+}
+
+/**********/
+/* Footer */
+/**********/
+
+footer{
+  background-color: var(--clr-main-20);
+  margin-top: var(--std-box-spacing);
+  display: flex;
+  flex-direction: column;
+  color: var(--clr-main-10);
+  align-items: center;
+  padding: var(--std-spacing);
+  gap: var(--std-spacing);
+}
+
+.socials{
+  display: flex;
+  gap: var(--std-spacing);
+}
+
+.socials img{
+  width: 32px;
+}
+
+
+/* Footer Desktop Size */
+
+@media(min-width: 1000px){
+
+  footer{
+    align-items: flex-end;
   }
 
 }
