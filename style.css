@@ -7,11 +7,12 @@
     --clr-main-10: #EBB42C;
     --clr-main-20: #012B28;
   
-    --clr-accent-10: #F1CB6C;
+    /* --clr-accent-10: #F1CB6C; */
     --clr-accent-20: #EFBCD5;
     --clr-accent-30: #3185FC;
-    --clr-accent-40: #E84855;
-    
+    /* --clr-accent-40: #E84855; */
+    --clr-accent-40: var(--clr-main-10);
+    --clr-accent-10: var(--clr-main-20);
     
     
     /* Custom Fonts */
@@ -800,6 +801,7 @@ footer{
   .product-description{
     background-color: var(--clr-accent-10);
     padding: var(--std-spacing);
+    border: var(--clr-accent-40) 5px solid;
   }
 
   .product-card img{
@@ -843,8 +845,6 @@ footer{
     flex-direction: column;
     gap: var(--std-spacing);
   }
-
-  
 
   .close-preview{
     border: none;
