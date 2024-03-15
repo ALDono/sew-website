@@ -5,7 +5,7 @@ const products = `
 {
   "products": [
   {
-      "id": 1710343682790,
+      "id": 1710515422061,
       "title": "Small Seasonal Blanket",
       "description": "Seasonal Blanket with soft brushed cotton backing. 125cm x 175cm",
       "price": 65.99,
@@ -16,7 +16,7 @@ const products = `
       ]
   },
   {
-      "id": 1710343736699,
+      "id": 1710515815052,
       "title": "Small Minion Blanket",
       "description": "Minion themed Blanket with soft brushed cotton backing. 125cm x 175cm",
       "price": 59.99,
@@ -27,7 +27,7 @@ const products = `
       ]
   },
   {
-    "id": 1710358274685,
+    "id": 1710517199796,
     "title": "Small Minion Blanket",
     "description": "Minion themed Blanket with soft brushed cotton backing. 125cm x 175cm",
     "price": 59.99,
@@ -38,7 +38,7 @@ const products = `
     ]
   },
   {
-    "id": 1710358430761,
+    "id": 1710517532913,
     "title": "Small Minion Blanket",
     "description": "Minion themed Blanket with soft brushed cotton backing. 125cm x 175cm",
     "price": 59.99,
@@ -49,7 +49,7 @@ const products = `
     ]
   },
   {
-    "id": 1710358499994,
+    "id": 1710517654931,
     "title": "Small Minion Blanket",
     "description": "Minion themed Blanket with soft brushed cotton backing. 125cm x 175cm",
     "price": 59.99,
@@ -60,7 +60,7 @@ const products = `
     ]
   },
   {
-    "id": 1710358536734,
+    "id": 1710517728347,
     "title": "Small Minion Blanket",
     "description": "Minion themed Blanket with soft brushed cotton backing. 125cm x 175cm",
     "price": 59.99,
@@ -68,6 +68,76 @@ const products = `
         "images/blankets/bl-sm-6-1.jpg",
         "images/blankets/bl-sm-6-2.jpg",
         "images/blankets/bl-sm-6-3.jpg"
+    ]
+  },
+  {
+    "id": 1710517856285,
+    "title": "Medium Seasonal Blanket",
+    "description": "Medium Colourful Blanket with soft brushed cotton backing. 125cm x 175cm",
+    "price": 65.99,
+    "imagePath":[
+        "images/blankets/bl-me-1-1.jpg",
+        "images/blankets/bl-me-1-2.jpg",
+        "images/blankets/bl-me-1-3.jpg"
+    ]
+  },
+  {
+    "id": 1710517907431,
+    "title": "Medium Colourful Blanket",
+    "description": "Medium Colourful Blanket with soft brushed cotton backing. 125cm x 175cm",
+    "price": 65.99,
+    "imagePath":[
+        "images/blankets/bl-me-2-1.jpg",
+        "images/blankets/bl-me-2-2.jpg",
+        "images/blankets/bl-me-2-3.jpg",
+        "images/blankets/bl-me-2-4.jpg"
+    ]
+  },
+  {
+    "id": 1710517985031,
+    "title": "Medium Disney Blanket",
+    "description": "Medium Colourful Blanket with soft brushed cotton backing. 125cm x 175cm",
+    "price": 65.99,
+    "imagePath":[
+        "images/blankets/bl-me-3-1.jpg",
+        "images/blankets/bl-me-3-2.jpg",
+        "images/blankets/bl-me-3-3.jpg",
+        "images/blankets/bl-me-3-4.jpg"
+    ]
+  },
+  {
+    "id": 1710518052059,
+    "title": "Medium Seasonal Blanket",
+    "description": "Medium Colourful Blanket with soft brushed cotton backing. 125cm x 175cm",
+    "price": 65.99,
+    "imagePath":[
+        "images/blankets/bl-me-4-1.jpg",
+        "images/blankets/bl-me-4-2.jpg",
+        "images/blankets/bl-me-4-3.jpg",
+        "images/blankets/bl-me-4-4.jpg"
+    ]
+  },
+  {
+    "id": 1710518097818,
+    "title": "Medium Red/Blue Blanket",
+    "description": "Medium Colourful Blanket with soft brushed cotton backing. 125cm x 175cm",
+    "price": 65.99,
+    "imagePath":[
+        "images/blankets/bl-me-5-1.jpg",
+        "images/blankets/bl-me-5-2.jpg",
+        "images/blankets/bl-me-5-3.jpg"
+    ]
+  },
+  {
+    "id": 1710518166285,
+    "title": "Large Blanket",
+    "description": "Medium Colourful Blanket with soft brushed cotton backing. 125cm x 175cm",
+    "price": 65.99,
+    "imagePath":[
+        "images/blankets/bl-l-1a-1.jpg",
+        "images/blankets/bl-la-1-2.jpg",
+        "images/blankets/bl-la-1-3.jpg",
+        "images/blankets/bl-la-1-4.jpg"
     ]
   }
   ]
@@ -86,17 +156,6 @@ const productsJson = JSON.parse(products);
         document.getElementById("prev-close").addEventListener("click",function(){
           document.getElementsByClassName("product-preview")[0].style.display = "none";
         })
-
-        var productName = 0;
-        var id = 0;
-        const mainImage = document.getElementById("product-image-main");
-        const secImage = document.getElementById("product-image-secondary");
-        const title = document.getElementById("product-title");
-        const price = document.getElementById("product-price");
-        const description = document.getElementById("product-description");
-        const productPreview = document.getElementById("prod-prev");
-        const productComponent = document.getElementById("product-component");
-        console.log(productsJson.products[0]);
 
         // Small Blankets
 
@@ -130,49 +189,68 @@ const productsJson = JSON.parse(products);
           initialisePrev(id,5)
         })
 
-
-
         // Medium Blankets
 
         document.getElementById("1710517856285").addEventListener("click",function(){
           let id = this.id;
-          initialisePrev(id,5)
+          initialisePrev(id,6)
         })
 
         document.getElementById("1710517907431").addEventListener("click",function(){
           let id = this.id;
-          initialisePrev(id,5)
+          initialisePrev(id,7)
         })
 
         document.getElementById("1710517985031").addEventListener("click",function(){
           let id = this.id;
-          initialisePrev(id,5)
+          initialisePrev(id,8)
         })
 
         document.getElementById("1710518052059").addEventListener("click",function(){
           let id = this.id;
-          initialisePrev(id,5)
+          initialisePrev(id,9)
         })
 
         document.getElementById("1710518097818").addEventListener("click",function(){
           let id = this.id;
-          initialisePrev(id,5)
+          initialisePrev(id,10)
         })
 
         // Large Blankets
 
         document.getElementById("1710518166285").addEventListener("click",function(){
           let id = this.id;
-          initialisePrev(id,5)
+          initialisePrev(id,11)
         })
+
+        //////////////////////
+        // populate preview //
+        //////////////////////
+
+        let productName = 0;
+        let id = 0;
+        const mainImage = document.getElementById("product-image-main");
+        const secImage = document.getElementById("product-image-secondary");
+        const title = document.getElementById("product-title");
+        const price = document.getElementById("product-price");
+        const description = document.getElementById("product-description");
+        const productPreview = document.getElementById("prod-prev");
+        const productComponent = document.getElementById("product-component");
+        console.log(productsJson.products[0]);
 
         function initialisePrev(id,index){
           displayBuyButton(id);
           displayProductPreview();
           displayPreviewImages(index);
-          // displayPreviewText(0);
+          displayPreviewText(index);
           youwhat(id);
 
+        }
+
+        function displayPreviewText(index){
+          title.innerHTML = productsJson.products[index].title;
+          description.innerHTML = productsJson.products[index].description;
+          price.innerHTML = "£"+productsJson.products[index].price;
         }
 
         function displayProductPreview(){
