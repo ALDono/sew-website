@@ -167,13 +167,13 @@ const productsJson = JSON.parse(products);
           let z = index;
           currentProd = productsJson.products[z];
           //clear images first
-          secImage.innerHTML = "<img src='' alt=''>";
-          mainImage.innerHTML = "<img src='' alt=''>";
+          secImage.innerHTML = " ";
+          mainImage.innerHTML = " ";
           
           for(i = 0; i < 3; i++){
             //display main image
             if(i == 0){
-              mainImage.innerHTML = "<img src='"+currentProd.imagePath[i]+"' alt=''>";  
+              mainImage.innerHTML = "<img src='"+currentProd.imagePath[i]+"' alt=''>";
             }
             //display secondary images
             secImage.innerHTML += "<img src='"+currentProd.imagePath[i]+"' alt=''>";           

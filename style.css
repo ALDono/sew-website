@@ -854,6 +854,22 @@ footer{
 
   /* Product Preview Window */
 
+  .category-select{
+    width: 50%;
+    margin: var(--std-margin-top) auto 0 auto;
+    display:flex;
+    justify-content: space-around;
+  }
+
+  .category-select a{
+    color: var(--clr-main-20);
+  }
+  .category-select a:hover{
+    text-decoration: underline;
+  }
+
+
+
   .product-preview{
     position: fixed;
     background-color: white;
@@ -862,25 +878,36 @@ footer{
     padding: calc(var(--std-spacing)/2);
     display: none;
     flex-direction: column;
-    gap: var(--std-spacing);
+    gap: 1em;
+    text-transform: none;
+    border-radius: 8px;
   }
 
   .close-preview{
     border: none;
     background: none;
-    width: 65px;
+    width: 32px;
     align-self: flex-end;
+  }
+
+  .main-preview{
+    border-radius: 8px;
+    overflow: hidden;
   }
 
   .secondary-preview{
     display: flex;
     justify-content: center;
-    gap: var(--std-spacing);
+    gap: 1em;
   }
 
   .secondary-preview img{
     width: 6em;
+    border-radius: 16px;
+    overflow: hidden;
   }
+
+
 
   /* Product Preview Desktop Size */
 
@@ -889,13 +916,45 @@ footer{
       left: 50%;
       transform: translateX(-50%);
     }
+
+    .secondary-preview{
+      gap: 3em;
+    }
+
+    .secondary-preview img{
+      width: 7em;
+    }
   }
 
 
 
+/*******************************/
+/* Contact Us Specific Styling */
+/*******************************/
 
+input[type=text], input[type=email],select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
 
+/* input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+} */
 
+/* input[type=submit]:hover {
+  background-color: #45a049;
+} */
 
 
 
