@@ -30,8 +30,8 @@
             <li><a active href="index.html">Home</a></li>
             <li><a href="blankets.html">Blankets</a></li>
             <li><a href="crafts.html">Crafts</a></li>
-            <li><a href="contactus.html">Contact Us</a></li>
-            <li><a href="#">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="about.html">About Us</a></li>
           </ul>
         </nav>
       </div>
@@ -73,26 +73,6 @@
         <p>Website By APT WebDesign</p>
       </div>
     </footer>
-    <script>
-      ////////////////////////////////////
-      // Hamburger Button Open and Close//
-      ////////////////////////////////////
-      var navigation = document.getElementById("nav-links");
-      var nav_btn_opn = document.getElementById("nav-btn-opn");
-      var nav_btn_cls = document.getElementById("nav-btn-cls");
-
-
-      document.getElementById("nav-btn-opn").addEventListener("click", function(){
-          nav_btn_opn.style.display = "none";
-          nav_btn_cls.style.display = "block"
-          navigation.style.display = "block";
-      })
-
-      document.getElementById("nav-btn-cls").addEventListener("click", function(){
-        nav_btn_opn.style.display = "block";
-        nav_btn_cls.style.display = "none"
-        navigation.style.display = "none";
-      })
-    </script>
+    <script src="myscripts.js"></script>
   </body>
 </html>

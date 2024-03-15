@@ -436,6 +436,28 @@
     margin: 0 auto;
   }
 
+  .discount{
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    background-color: var(--clr-main-10);
+    color: var(--clr-main-20);
+    text-align:center;
+    padding: 6px 64px 6px 64px;
+    display:none;
+  }
+
+  .discount button{
+    display: inline;
+    border: none;
+    background: none;
+    width: 32px;
+    margin-left: 32px;
+  }
+
+  .discount p{
+    display: inline;
+  }
 
   /******************/
   /* Header Section */
@@ -913,8 +935,10 @@ footer{
 
   @media(min-width: 1100px){
     .product-preview{
+      padding: calc(var(--std-spacing));
       left: 50%;
       transform: translateX(-50%);
+      max-height: 90vh;
     }
 
     .secondary-preview{
