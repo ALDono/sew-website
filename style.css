@@ -782,39 +782,55 @@ footer{
 
   .product-card{
     width: 300px;
-    color: var(--clr-accent-40);
-    border-radius: 16px 16px 0px 0px;
-    overflow:hidden;
+    color: var(--clr-main-20);
   }
 
-  .product-card:hover{
-    animation:hoverScale 0.2s linear forwards;
+  .product-image-container{
+    overflow: hidden;
+    border-radius: 16px;
+    position: relative;
+    height: 225px;
+    width: 100%;
   }
 
-  @keyframes hoverScale{
+  .product-image-container img{
+    position:absolute;
+  }
+
+  .product-image-container img:hover{
+    animation: meltAway 1s linear forwards;
+  }
+
+  @keyframes meltAway{
     100%{
-      scale: 1.03;
-      box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.40);
+      opacity:0;
     }
   }
 
   .product-description{
-    background-color: var(--clr-accent-10);
     padding: var(--std-spacing);
-    border: var(--clr-accent-40) 5px solid;
-  }
-
-  .product-card img{
-    width: 300px;
   }
 
   .product-title{
     font-weight: var(--fw-bold);
-    font-size: 1.375rem;
+    font-size: 1.175rem;
+    text-transform: none;
   }
 
   .product-text{
     text-transform: none;
+    font-size: 1rem;
+    float: left;
+  }
+
+  .product-price{
+    font-weight: var(--fw-bold);
+    font-size: 1rem;
+    float: right;
+  }
+
+  .product-price span{
+    text-decoration: line-through;
   }
 
   /* Product Card Container Tablet */
