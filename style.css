@@ -775,6 +775,9 @@ footer{
   }
 
   .product-card-container{
+    /* background-color: white; */
+    /* padding: var(--std-spacing); */
+    border-radius: 16px;
     display: grid;
     grid-template-columns: 1fr;
     gap: var(--std-spacing);
