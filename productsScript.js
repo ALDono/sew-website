@@ -237,15 +237,37 @@ const productsJson = JSON.parse(products);
         const productPreview = document.getElementById("prod-prev");
         const productComponent = document.getElementById("product-component");
         console.log(productsJson.products[0]);
+        let secImageArray = [];
 
         function initialisePrev(id,index){
           displayBuyButton(id);
           displayProductPreview();
           displayPreviewImages(index);
           displayPreviewText(index);
+          popSecImageArray();
           youwhat(id);
-
         }
+
+        // FIX THIS //
+        function popSecImageArray(){
+          secImageArray = document.getElementsByClassName("secondaryImage");
+          storeImageOne = "";
+          storeImageTwo = "";
+          for(i = 0; i < secImageArray.length; i++){
+            document.getElementsByClassName("secondaryImage")[i].addEventListener("click",function(){
+              storeImageOne = mainImage.innerHTML;
+              storeImageTwo = secImageArray[i].innerHTML;
+
+              mainImage.innerHTML = storeImageTwo;
+              secImageArray[i] = storeImageOne;
+            });
+          }
+          
+        }
+
+        
+
+        
 
         function displayPreviewText(index){
           title.innerHTML = productsJson.products[index].title;
@@ -270,7 +292,7 @@ const productsJson = JSON.parse(products);
               mainImage.innerHTML = "<img src='"+currentProd.imagePath[i]+"' alt=''>";
             }
             //display secondary images
-            secImage.innerHTML += "<img src='"+currentProd.imagePath[i]+"' alt=''>";           
+            secImage.innerHTML += "<img class='secondaryImage' src='"+currentProd.imagePath[i]+"' alt=''>";           
           }
         }
 
@@ -279,6 +301,9 @@ const productsJson = JSON.parse(products);
           console.log(z);
           productComponent.innerHTML = "<div id='product-component-"+z+"'></div>";
         }
+
+
+
 
 // This pairs the 2 ID's that come with a shopify buy button.
 // Allowing me to just run 1 block of shopify code, instead of an block per
