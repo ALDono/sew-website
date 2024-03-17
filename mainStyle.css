@@ -464,7 +464,7 @@
     margin: 0 auto;
   }
 
-  .discount{
+  .discount-banner{
     position: fixed;
     z-index: 3;
     width: 100%;
@@ -472,19 +472,19 @@
     color: var(--clr-main-20);
     text-align:center;
     padding: 6px 64px 6px 64px;
-    display:none;
+    /* display:none; */
+    display: flex;
+    justify-content: center;
+    gap: 2em;
   }
 
-  .discount button{
-    display: inline;
+  .discount-banner button{
     border: none;
     background: none;
-    width: 32px;
-    margin-left: 32px;
+    width: 24px;
   }
 
   .discount p{
-    display: inline;
   }
 
   /******************/
