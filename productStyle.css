@@ -30,6 +30,17 @@
     width: 100%;
   }
 
+  .discount-product{
+    background-color: yellow;
+    position: absolute;
+    z-index: 3;
+    left: 200px;
+    top: 20px;
+    padding: 0.175em;
+    border-radius: 8px;
+    text-transform: none;
+  } 
+
   .product-image-container img{
     position:absolute;
   }
@@ -161,3 +172,6 @@
       width: 7em;
     }
   }
+
+
+
