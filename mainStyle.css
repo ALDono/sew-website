@@ -472,8 +472,7 @@
     color: var(--clr-main-20);
     text-align:center;
     padding: 6px 64px 6px 64px;
-    /* display:none; */
-    display: flex;
+    display:none;
     justify-content: center;
     gap: 2em;
   }

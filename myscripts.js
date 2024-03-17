@@ -18,7 +18,7 @@
         navigation.style.display = "none";
       })
 
-      // Discount Close Button
+      // Discount Close Button //
       document.getElementById("discountClose").addEventListener("click", function(){
         document.getElementById("discountBanner").style.display = "none";
       })
