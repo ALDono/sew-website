@@ -244,30 +244,28 @@ const productsJson = JSON.parse(products);
           displayProductPreview();
           displayPreviewImages(index);
           displayPreviewText(index);
-          popSecImageArray();
+          secImageSelection();
           youwhat(id);
         }
 
-        // FIX THIS //
-        function popSecImageArray(){
+        
+        function secImageSelection(){
           secImageArray = document.getElementsByClassName("secondaryImage");
-          storeImageOne = "";
-          storeImageTwo = "";
-          for(i = 0; i < secImageArray.length; i++){
-            document.getElementsByClassName("secondaryImage")[i].addEventListener("click",function(){
-              storeImageOne = mainImage.innerHTML;
-              storeImageTwo = secImageArray[i].innerHTML;
+          let mainImageSrc = document.getElementById("mainImage");
 
-              mainImage.innerHTML = storeImageTwo;
-              secImageArray[i] = storeImageOne;
-            });
-          }
+          document.getElementsByClassName("secondaryImage")[0].addEventListener("click",function(){
+            mainImageSrc.src = secImageArray[0].src;
+          });
+
+          document.getElementsByClassName("secondaryImage")[1].addEventListener("click",function(){
+            mainImageSrc.src = secImageArray[1].src;
+          });
+
+          document.getElementsByClassName("secondaryImage")[2].addEventListener("click",function(){
+            mainImageSrc.src = secImageArray[2].src;
+          });
           
         }
-
-        
-
-        
 
         function displayPreviewText(index){
           title.innerHTML = productsJson.products[index].title;
@@ -289,7 +287,7 @@ const productsJson = JSON.parse(products);
           for(i = 0; i < 3; i++){
             //display main image
             if(i == 0){
-              mainImage.innerHTML = "<img src='"+currentProd.imagePath[i]+"' alt=''>";
+              mainImage.innerHTML = "<img id='mainImage' src='"+currentProd.imagePath[i]+"' alt=''>";
             }
             //display secondary images
             secImage.innerHTML += "<img class='secondaryImage' src='"+currentProd.imagePath[i]+"' alt=''>";           
