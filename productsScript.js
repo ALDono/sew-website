@@ -6,9 +6,9 @@ const products = `
   "products": [
   {
       "id": 1710515422061,
-      "title": "Small Seasonal Blanket",
-      "description": "Seasonal Blanket with soft brushed cotton backing. 125cm x 175cm",
-      "price": 65.99,
+      "title": "Seasonal Pram/New Born Blanket",
+      "description": "This is a pram/new born blanket made of 100% cotton with a backing that is 100% Brushed cotton. <br>The size of this blanket is 21&Prime; X 29&Prime;.",
+      "price": "24.72",
       "imagePath":[
           "images/blankets/bl-sm-1-1.jpg",
           "images/blankets/bl-sm-1-2.jpg",
@@ -17,9 +17,9 @@ const products = `
   },
   {
       "id": 1710515815052,
-      "title": "Small Minion Blanket",
-      "description": "Minion themed Blanket with soft brushed cotton backing. 125cm x 175cm",
-      "price": 59.99,
+      "title": "Minions Baby/Child Blanket",
+      "description": "This is a baby/child blanket made of 100% cotton with a backing that is 100% Brushed cotton. <br>The size of this blanket is 34&Prime; X 28&Prime;.",
+      "price": "30.90",
       "imagePath":[
           "images/blankets/bl-sm-2-1.jpg",
           "images/blankets/bl-sm-2-2.jpg",
@@ -28,9 +28,9 @@ const products = `
   },
   {
     "id": 1710517199796,
-    "title": "Small Minion Blanket",
-    "description": "Minion themed Blanket with soft brushed cotton backing. 125cm x 175cm",
-    "price": 59.99,
+    "title": "Winnie The Pooh Baby/Child Blanket",
+    "description": "This is a baby/child blanket made of 100% cotton with a backing that is 100% Brushed cotton. <br>The size of this blanket is 34&Prime; X 28&Prime;.",
+    "price": "30.90",
     "imagePath":[
         "images/blankets/bl-sm-3-1.jpg",
         "images/blankets/bl-sm-3-2.jpg",
@@ -39,9 +39,9 @@ const products = `
   },
   {
     "id": 1710517532913,
-    "title": "Small Minion Blanket",
-    "description": "Minion themed Blanket with soft brushed cotton backing. 125cm x 175cm",
-    "price": 59.99,
+    "title": "Baby Blue Pram/New Born Blanket",
+    "description": "This is a pram/new born blanket made of 100% cotton with a backing that is 100% Brushed cotton. <br>The size of this blanket is 19&Prime; X 14&Prime;.",
+    "price": "20.60",
     "imagePath":[
         "images/blankets/bl-sm-4-1.jpg",
         "images/blankets/bl-sm-4-2.jpg",
@@ -50,9 +50,9 @@ const products = `
   },
   {
     "id": 1710517654931,
-    "title": "Small Minion Blanket",
-    "description": "Minion themed Blanket with soft brushed cotton backing. 125cm x 175cm",
-    "price": 59.99,
+    "title": "Pram/New Born Blanket",
+    "description": "This is a pram/new born blanket made of 100% cotton with a backing that is 100% Brushed cotton. <br>The size of this blanket is 16&Prime; X 20&Prime;.",
+    "price": "20.60",
     "imagePath":[
         "images/blankets/bl-sm-5-1.jpg",
         "images/blankets/bl-sm-5-2.jpg",
@@ -60,21 +60,21 @@ const products = `
     ]
   },
   {
-    "id": 1710517728347,
-    "title": "Small Minion Blanket",
-    "description": "Minion themed Blanket with soft brushed cotton backing. 125cm x 175cm",
-    "price": 59.99,
+    "id": 1710518166285,
+    "title": "Lap Blanket",
+    "description": "This is a pram blanket made of 100% cotton with a backing that is soft huggable fleece. The size of this blanket is 30&Prime X 19&Prime.",
+    "price": "20.60",
     "imagePath":[
-        "images/blankets/bl-sm-6-1.jpg",
-        "images/blankets/bl-sm-6-2.jpg",
-        "images/blankets/bl-sm-6-3.jpg"
+        "images/blankets/bl-sm-7-1.jpg",
+        "images/blankets/bl-sm-7-2.jpg",
+        "images/blankets/bl-sm-7-3.jpg"
     ]
   },
   {
     "id": 1710517856285,
-    "title": "Medium Seasonal Blanket",
-    "description": "Medium Colourful Blanket with soft brushed cotton backing. 125cm x 175cm",
-    "price": 65.99,
+    "title": "Snowman Baby/Child Blanket",
+    "description": "This is a baby/child blanket made of 100% cotton with a backing that is a cosy fleece. <br>The size of this blanket is 47&Prime; X 30&Prime;.",
+    "price": "30.90",
     "imagePath":[
         "images/blankets/bl-me-1-1.jpg",
         "images/blankets/bl-me-1-2.jpg",
@@ -83,9 +83,9 @@ const products = `
   },
   {
     "id": 1710517907431,
-    "title": "Medium Colourful Blanket",
-    "description": "Medium Colourful Blanket with soft brushed cotton backing. 125cm x 175cm",
-    "price": 65.99,
+    "title": "Lap Blanket",
+    "description": "This is a lap blanket made of recycled curtains with a backing that is cosy fleece. <br>The size of this blanket is 37&Prime; X 38&Prime;.",
+    "price": "30.90",
     "imagePath":[
         "images/blankets/bl-me-2-1.jpg",
         "images/blankets/bl-me-2-2.jpg",
@@ -95,9 +95,9 @@ const products = `
   },
   {
     "id": 1710517985031,
-    "title": "Medium Disney Blanket",
-    "description": "Medium Colourful Blanket with soft brushed cotton backing. 125cm x 175cm",
-    "price": 65.99,
+    "title": "Disney themed baby/Child Blanket",
+    "description": "This is a baby/child blanket made of 100% cotton with a backing that is 100% Brushed cotton. <br>The size of this blanket is 35&Prime; X 29&Prime;",
+    "price": "30.90",
     "imagePath":[
         "images/blankets/bl-me-3-1.jpg",
         "images/blankets/bl-me-3-2.jpg",
@@ -107,9 +107,9 @@ const products = `
   },
   {
     "id": 1710518052059,
-    "title": "Medium Seasonal Blanket",
-    "description": "Medium Colourful Blanket with soft brushed cotton backing. 125cm x 175cm",
-    "price": 65.99,
+    "title": "Baby Blanket",
+    "description": "This is a baby blanket made of 100% cotton with a backing that is 100% Brushed cotton. <br>The size of this blanket is 30&Prime; X 35&Prime;.",
+    "price": "30.90",
     "imagePath":[
         "images/blankets/bl-me-4-1.jpg",
         "images/blankets/bl-me-4-2.jpg",
@@ -119,9 +119,9 @@ const products = `
   },
   {
     "id": 1710518097818,
-    "title": "Medium Red/Blue Blanket",
-    "description": "Medium Colourful Blanket with soft brushed cotton backing. 125cm x 175cm",
-    "price": 65.99,
+    "title": "Colourful Pram/Cot Blanket",
+    "description": "This is a pram/cot blanket made of 100% cotton with a backing that is warm fleece. <br>The size of this blanket is 42&Prime; X 25&Prime;.",
+    "price": "30.90",
     "imagePath":[
         "images/blankets/bl-me-5-1.jpg",
         "images/blankets/bl-me-5-2.jpg",
@@ -131,8 +131,8 @@ const products = `
   {
     "id": 1710518166285,
     "title": "Lap Blanket",
-    "description": "This is a lap blanket made of recycled curtains with a backing that is 100% brushed cotton. <br>The size of this blanket is 43&Prime; x 33&Prime;.",
-    "price": 65.99,
+    "description": "This is a lap blanket made of recycled curtains with a backing that is 100% brushed cotton. Filled was 2 ounce wadding. <br>The size of this blanket is 43&Prime; x 33&Prime;.",
+    "price": "30.90",
     "imagePath":[
         "images/blankets/bl-l-1a-1.jpg",
         "images/blankets/bl-la-1-2.jpg",
