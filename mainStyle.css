@@ -774,6 +774,10 @@ footer{
   width: 32px;
 }
 
+.legal{
+  text-transform: none;
+}
+
 
 /* Footer Desktop Size */
 
@@ -813,7 +817,6 @@ footer{
   @media (min-width: 650px){
     .page-description img{
       content: url(images/heroimage.png);
-
     }
   }
 
