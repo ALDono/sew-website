@@ -390,6 +390,7 @@
     left:100%;
     position:absolute;
     animation:movement 40s ease-in-out infinite;
+    object-fit: cover;
   }
 
   .product-image img:nth-child(1) {

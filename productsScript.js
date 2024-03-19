@@ -130,8 +130,8 @@ const products = `
   },
   {
     "id": 1710518166285,
-    "title": "Large Blanket",
-    "description": "Medium Colourful Blanket with soft brushed cotton backing. 125cm x 175cm",
+    "title": "Lap Blanket",
+    "description": "This is a lap blanket made of recycled curtains with a backing that is 100% brushed cotton. <br>The size of this blanket is 43&Prime; x 33&Prime;.",
     "price": 65.99,
     "imagePath":[
         "images/blankets/bl-l-1a-1.jpg",
