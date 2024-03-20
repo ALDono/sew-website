@@ -272,7 +272,7 @@
 
   .br{
     border-radius: var(--std-br);
-    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.40);
+    /* box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.40); */
     overflow: hidden;
   }
 
@@ -323,7 +323,7 @@
   }
 
   .bg-img-3{
-    background-image: url(images/backgroundB.png);
+    background-image: url(images/backgroundB.jpg);
     background-size:cover;
     background-repeat: no-repeat;
     position: fixed;
@@ -674,7 +674,7 @@
   }
 
   .main-image img{
-    content: url(images/background1vert.jpg);
+    content: url(images/background2.jpg);
     position: absolute; right: 0; bottom: 0; 
   }
 }
