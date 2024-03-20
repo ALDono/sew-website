@@ -675,7 +675,8 @@
 
   .main-image img{
     content: url(images/background2.jpg);
-    position: absolute; right: 0; bottom: 0; 
+    object-fit: cover;
+    height: 100%;
   }
 }
 
