@@ -3,20 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>APT Web Design</title>
     <style>
-            /* animation: fade3 linear forwards;
-    animation-timeline: scroll();
-  }
-
-  @keyframes fade1{
-    0%{
-      opacity: 0.8;
-    }
-    33%{
-      opacity: 0;
-    }
-  } */
     body{
         font-size: 4rem;
         font-family: sans-serif;
@@ -32,6 +20,11 @@
 
     .logo-container{
         position: relative;
+
+    }
+
+    .logo-container:hover{
+        outline: white 5px solid;
     }
 
     .frag{
@@ -76,6 +69,21 @@
         width: 700px;
     }
 
+    .cursor{
+        position: absolute;
+        left: 530px;
+        top:3px;
+        opacity: 0;
+        animation: blink 1s step-end infinite;
+        animation-delay: 5s;
+    }
+
+    @keyframes blink {
+        50%{
+            opacity: 1;
+        }
+    }
+
     @keyframes moveRight{
         100%{
             left:200px;
@@ -97,14 +105,27 @@
         }
         
     }
+
+    a{
+        text-decoration: none;
+        color:white;
+    }
+
+
     </style>
 </head>
 <body>
     <div class="logo-container">
-        <div class="curlies frag"><div class="r-curly">{</div><div class="l-curly">}</div></div>
-        <div class="apt frag">APT</div>
-        <div class="web-design frag">Web Design</div>
+    <a href="google.com">
+        <div class="logo-container">
+            <div class="curlies frag"><div class="r-curly">{</div><div class="l-curly">}</div></div>
+            <div class="apt frag">APT</div>
+            <div class="web-design frag">Web Design</div>
+            <div class="cursor frag">_</div>
+        </div>
+    </a>
     </div>
+
     
 </body>
 </html>
