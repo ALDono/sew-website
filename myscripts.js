@@ -22,3 +22,16 @@
       document.getElementById("discountClose").addEventListener("click", function(){
         document.getElementById("discountBanner").style.display = "none";
       })
+
+      ///////////////////
+      // Cookie Script //
+      ///////////////////
+
+
+      document.getElementById("gdpr-cookie-accept").addEventListener("click", function(){
+        
+        document.getElementById("gdpr-cookie-message").style.display = "none";
+      })
+      
+
+// End of Cookie Script
