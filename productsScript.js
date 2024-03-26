@@ -50,7 +50,7 @@ const products = `
   },
   {
     "id": 1710517654931,
-    "title": "Pram/New Born Blanket",
+    "title": "Animal Pram/New Born Blanket",
     "description": "This is a pram/new born blanket made of 100% cotton with a backing that is 100% Brushed cotton. <br>The size of this blanket is 16&Prime; X 20&Prime;.",
     "price": "20.60",
     "imagePath":[
@@ -107,7 +107,7 @@ const products = `
   },
   {
     "id": 1710518052059,
-    "title": "Baby Blanket",
+    "title": "Polka-Dot Baby Blanket",
     "description": "This is a baby blanket made of 100% cotton with a backing that is 100% Brushed cotton. <br>The size of this blanket is 30&Prime; X 35&Prime;.",
     "price": "30.90",
     "imagePath":[
