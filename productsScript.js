@@ -61,8 +61,8 @@ const products = `
   },
   {
     "id": 1710518166285,
-    "title": "Lap Blanket",
-    "description": "This is a pram blanket made of 100% cotton with a backing that is soft huggable fleece. The size of this blanket is 30&Prime X 19&Prime.",
+    "title": "Pram/Baby Blanket",
+    "description": "This is a pram blanket made of 100% cotton with a backing that is soft huggable fleece. The size of this blanket is 30&Prime; X 19&Prime;.",
     "price": "20.60",
     "imagePath":[
         "images/blankets/bl-sm-7-1.jpg",

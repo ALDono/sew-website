@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            /* animation: fade3 linear forwards;
+    animation-timeline: scroll();
+  }
+
+  @keyframes fade1{
+    0%{
+      opacity: 0.8;
+    }
+    33%{
+      opacity: 0;
+    }
+  } */
+    body{
+        font-size: 4rem;
+        font-family: sans-serif;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+        background-color: black;
+        color: white;
+    }
+
+    .logo-container{
+        position: relative;
+    }
+
+    .frag{
+        opacity: 1;
+    }
+
+    .curlies{
+        position: absolute;
+        left: 17px;
+        width: 150px;
+        text-align: justify;
+        display: flex;
+        justify-content: center;
+        gap: 0px;
+        animation: CurliesfadeIn 2s linear forwards;
+        opacity: 0;
+        z-index: 1;
+        background-color: black;
+    }
+
+    .apt{
+        position: absolute;
+        left: 30px;
+        top: 5px;
+        opacity: 0;
+        animation: AptfadeIn 2s ease-in forwards;
+        animation-delay: 1.5s;
+        z-index:2;
+        background-color: black;
+
+    }
+
+    .web-design{
+        position: absolute;
+        left: -10px;
+        top: 12px;
+        z-index: -1;
+        animation: moveRight 2s linear forwards;
+        animation-delay: 2.5s;
+        font-size: 3.5rem;
+        opacity: 0;
+        width: 700px;
+    }
+
+    @keyframes moveRight{
+        100%{
+            left:200px;
+            opacity: 1;
+        }
+    }
+
+    @keyframes CurliesfadeIn {
+        100%{
+            opacity: 1;
+            gap: 140px;
+        }
+        
+    }
+
+    @keyframes AptfadeIn {
+        100%{
+            opacity: 1;
+        }
+        
+    }
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <div class="curlies frag"><div class="r-curly">{</div><div class="l-curly">}</div></div>
+        <div class="apt frag">APT</div>
+        <div class="web-design frag">Web Design</div>
+    </div>
+    
+</body>
+</html>
